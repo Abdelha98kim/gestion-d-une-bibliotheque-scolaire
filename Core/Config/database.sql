@@ -52,3 +52,16 @@ CREATE TABLE reservation(
     CONSTRAINT FK_livreId FOREIGN KEY (livre_id) REFERENCES livre(id),
     CONSTRAINT FK_etatId FOREIGN KEY (etat_id) REFERENCES etat(id)
 );
+
+-- Creation de la table de l'utilisateur
+CREATE TABLE user(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(10),
+    prenom VARCHAR(10),
+    email VARCHAR(150) UNIQUE,
+    password VARCHAR(50) NOT NULL,
+    role_id INT,
+    reservation_id INT,
+    CONSTRAINT FK_roleId FOREIGN KEY (role_id) REFERENCES roles(id),
+    CONSTRAINT FK_reservationId FOREIGN KEY (reservation_id) REFERENCES reservation(id)
+);
