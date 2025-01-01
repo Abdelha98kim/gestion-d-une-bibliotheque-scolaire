@@ -19,3 +19,9 @@ CREATE TABLE categorie(
 	id INT PRIMARY KEY AUTO_INCREMENT,
     nom VARCHAR(50)
 );
+
+-- Creation de la table des tags
+CREATE TABLE tag(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(20)
+);
