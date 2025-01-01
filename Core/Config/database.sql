@@ -14,3 +14,8 @@ CREATE TABLE etat(
     nom VARCHAR(20)
 );
 
+-- Creation de la table des categorie
+CREATE TABLE categorie(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(50)
+);
