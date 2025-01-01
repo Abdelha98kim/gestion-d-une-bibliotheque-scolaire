@@ -7,3 +7,10 @@ CREATE TABLE roles(
 	id INT PRIMARY KEY AUTO_INCREMENT,
     nom VARCHAR(50)
 );
+
+-- Creation de la table d'etat
+CREATE TABLE etat(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    nom VARCHAR(20)
+);
+
