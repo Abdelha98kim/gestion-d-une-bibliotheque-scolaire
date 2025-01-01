@@ -40,3 +40,15 @@ CREATE TABLE livre(
     CONSTRAINT FK_tagId FOREIGN KEY (tag_id) REFERENCES tag(id),
     CONSTRAINT FK_categorieId FOREIGN KEY (categorie_id) REFERENCES categorie(id)
 );
+
+-- Creation de la table des reservation
+CREATE TABLE reservation(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    code VARCHAR(10),
+    date_debut DATE,
+    date_fin DATE,
+    livre_id INT,
+    etat_id INT,
+    CONSTRAINT FK_livreId FOREIGN KEY (livre_id) REFERENCES livre(id),
+    CONSTRAINT FK_etatId FOREIGN KEY (etat_id) REFERENCES etat(id)
+);
