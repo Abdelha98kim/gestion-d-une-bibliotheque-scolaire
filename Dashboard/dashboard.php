@@ -105,12 +105,57 @@
         <div class="recent-sales box">
           <div class="title">Ajouter Un livre</div>
           <div class="sales-details">
-            <form action="">
-
-            </form>
+          <form action="#" class="form">
+        <div class="input-box">
+          <label>Titre</label>
+          <input type="text" placeholder="Titre de livre" required />
+        </div>
+        <div class="input-box">
+          <label>Auteur</label>
+          <input type="text" placeholder="Auteur de livre" required />
+        </div>
+        <div class="input-box">
+            <label>Date de Creation</label>
+            <input type="date" placeholder="Date de creation de livre" required />
           </div>
-          <div class="button">
-            <a href="#">Ajouter</a>
+        <div class="column">
+          <div class="input-box">
+            <label>Prix</label>
+            <input type="number" placeholder="Prix de livre" required />
+          </div>
+          <div class="input-box">
+            <label>Quantité</label>
+            <input type="number" placeholder="La quantité dans le stock" required />
+          </div>
+        </div>
+        <div class="input-box">
+            <label>Serial</label>
+            <input type="text" placeholder="Serial" required />
+          </div>
+        <div class="gender-box">
+          <h3>Gender</h3>
+          <div style="display:flex !important; justify-content:space-between; padding:0 15px 0 0; align-items:center">
+            <input type="text" placeholder="Tags" style="height:50px; width: 500px; border: 1px solid #707070; border-radius: 10px; padding:5px 16px">
+            <div style="cursor:pointer; border:1px solid #707070; height:50px; width: 50px; display:flex; align-items:center; justify-content:center; border-radius:100%">+</div>
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Categorie</label>
+          <div class="column">
+            <div class="select-box">
+              <select>
+                <option></option>
+                <option>Sience</option>
+                <option>Philosophie</option>
+                <option>Action et aventure</option>
+                <option>Fantaisie</option>
+                <option>Romance</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
           </div>
         </div>
         <div class="top-sales box">
