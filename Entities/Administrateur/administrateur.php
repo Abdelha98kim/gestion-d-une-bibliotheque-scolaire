@@ -32,5 +32,31 @@
         public function setRole($role){
             $this->role = $role;
         }
+
+        // getters
+        public function getNom(){
+            return $this->nom;
+        }
+
+        public function getPrenom(){
+            return $this->prenom;
+        }
+
+        public function getEmail(){
+            return $this->email;
+        }
+
+        public function getPassword(){
+            return $this->password;
+        }
+
+        public function getRole(){
+            return $this->role;
+        }
+
+        // to string 
+        public function __tostring(){
+            echo "Nom: " . $this->nom . " Prenom: " . $this->prenom . " Emai: " . $this->email . " Password: " . $this->password . " Role: " . $this->role;
+        }
     }
 ?>
