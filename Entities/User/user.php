@@ -68,5 +68,4 @@
             return "Id: " . $this->id . "<br>" . "Nom: " . $this->nom .  "<br>" . " Prenom: " . $this->prenom . "<br>" . " Email: " . $this->email . "<br>" . " Password: " . $this->password . "<br>" . " Role: " . $this->role . "<br>";
         }
     }
-
 ?>
