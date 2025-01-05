@@ -1,62 +1,12 @@
 <?php
-    class Administrateur{
-        // les attributes
-        private $nom, $prenom, $email, $password, $role;
+    include("../User/user.php");
 
-        // Constructore
-        public function __construct($nom, $prenom, $email, $password, $role){
-            $this->nom = $nom;
-            $this->prenom = $prenom;
-            $this->email = $email;
-            $this->password = $password;
-            $this->role = $role;
-        }
+    // Creation de class d'administrateur depuis le user 
+    class Administrateur extends User{
 
-        // Setters
-        public function setNom($nom){
-            $this->nom = $nom;
-        }
-
-        public function setPrenom($prenom){
-            $this->prenom = $prenom;
-        }
-
-        public function setEmail($email){
-            $this->email = $email;
-        }
-
-        public function setPassword($password){
-            $this->password = $password;
-        }
-
-        public function setRole($role){
-            $this->role = $role;
-        }
-
-        // getters
-        public function getNom(){
-            return $this->nom;
-        }
-
-        public function getPrenom(){
-            return $this->prenom;
-        }
-
-        public function getEmail(){
-            return $this->email;
-        }
-
-        public function getPassword(){
-            return $this->password;
-        }
-
-        public function getRole(){
-            return $this->role;
-        }
-
-        // to string 
-        public function __tostring(){
-            echo "Nom: " . $this->nom . " Prenom: " . $this->prenom . " Emai: " . $this->email . " Password: " . $this->password . " Role: " . $this->role;
-        }
     }
+
+    $admin = new Administrateur(1, "Baalla", "Abdelhakim", "b7521abaalla@gmail.com", "hrtt321568", "admin");
+    echo $admin->__tostring();
+
 ?>
