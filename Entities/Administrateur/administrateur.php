@@ -6,7 +6,6 @@
 
     }
 
-    $admin = new Administrateur(1, "Baalla", "Abdelhakim", "b7521abaalla@gmail.com", "hrtt321568", "admin");
-    echo $admin->__tostring();
+    $admin = new Administrateur(1, "Baalla", "Abdelhakim", "Abdelhakimbaalla50@gmail.com", "hzee 321 mkl 456", "admin");
 
 ?>
