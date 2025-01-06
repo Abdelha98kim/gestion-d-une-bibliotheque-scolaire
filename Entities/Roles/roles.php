@@ -1,6 +1,6 @@
 <?php
 
- class Tag {
+ class Roles {
     private $id;
     private $nom;
 
