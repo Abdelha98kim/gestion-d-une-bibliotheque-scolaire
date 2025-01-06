@@ -1,10 +1,12 @@
 <?php
+
+    include("../Roles/roles.php");
     class User{
         // les attributes
         private $id, $nom, $prenom, $email, $password, $role;
 
         // Constructore
-        public function __construct($id, $nom, $prenom, $email, $password, $role){
+        public function __construct($id, $nom, $prenom, $email, $password, Roles $role){
             $this->id = $id;
             $this->nom = $nom;
             $this->prenom = $prenom;
