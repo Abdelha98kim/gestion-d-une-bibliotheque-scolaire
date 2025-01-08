@@ -1,4 +1,6 @@
 <?php
+
+    include("../Roles/roles.php");
     class User{
         // les attributes
         private $id, $nom, $prenom, $email, $password, $role;
